@@ -1,26 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ropa Urbana</title>
     <link rel="stylesheet" href="diseño.css">
 </head>
 <body>
-    <header>
-        <h1>
-            <!-- hola -->
-            hola
-            Ropa urbana
-        </h1>
-    </header>
-    <section>
-        <article>
-            
-        </article>
-    </section>
-    <footer>
 
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <ul class="nav_links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#ofertas">Ofertas</a></li>
+            <li><a href="#galeria">Galería</a></li>
+        </ul>
+    </nav>
+    <!-- CABECERA -->
+    <div class="cabezera">
+        <header>
+            <h1>Ropa Urbana</h1>
+            <p>Moda exclusiva hecha en Chile</p>
+        </header>
+    </div>
+    <!-- SECCIÓN INICIO -->
+    <section id="inicio" class="seccion">
+        <h2>Bienvenidos</h2>
+        <p>Somos una tienda chilena dedicada a la venta de ropa urbana exclusiva.
+        Encuentra los mejores estilos al mejor precio.</p>
+    </section>
+    <!-- SECCIÓN OFERTAS -->
+    <section id="ofertas" class="seccion">
+        <h2>Ofertas</h2>
+        <div class="tarjetas">
+            <div class="tarjeta">
+                <img src="img/ropa3.jpg" alt="Poleron urbano">
+                <div class="tarjeta_info">
+                    <h3>Poleron GAP KanYe</h3>
+                    <p class="precio">$330.990</p>
+                    <p class="tallas_titulo">Tallas disponibles:</p>
+                    <div class="tallas">
+                        <span class="talla">S</span>
+                        <span class="talla">M</span>
+                        <span class="talla">L</span>
+                        <span class="talla">XL</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <img src="img/ropa4.jpg" alt="Pantalon cargo">
+                <div class="tarjeta_info">
+                    <h3>Pantalón baggy</h3>
+                    <p class="precio">$24.990</p>
+                    <p class="tallas_titulo">Tallas disponibles:</p>
+                    <div class="tallas">
+                        <span class="talla">S</span>
+                        <span class="talla">M</span>
+                        <span class="talla">XL</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <img src="img/ropa2.jpg" alt="Polera streetwear">
+                <div class="tarjeta_info">
+                    <h3>Chaqueta GAP KanYe</h3>
+                    <p class="precio">$300.990</p>
+                    <p class="tallas_titulo">Tallas disponibles:</p>
+                    <div class="tallas">
+                        <span class="talla">M</span>
+                        <span class="talla">L</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCIÓN GALERÍA -->
+    <section id="galeria" class="seccion">
+        <h2>Galería</h2>
+        <div class="galeria_grid">
+            <img src="img/ropa2.jpg" alt="ropa 2" class="imagen">
+            <img src="img/ropa3.jpg" alt="ropa 3" class="imagen">
+            <img src="img/ropa4.jpg" alt="ropa 4" class="imagen">
+            <img src="img/ropa5.jpg" alt="ropa 5" class="imagen">
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2024 Ropa Urbana Chile</p>
     </footer>
+
 </body>
 </html>
