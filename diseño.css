@@ -1,4 +1,8 @@
-/*  BASE */
+html {
+    scroll-behavior: smooth;
+}
+
+/*  Base */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,19 +10,23 @@
 }
 
 body {
-    background-color: rgb(96, 173, 103);
+    background-color: rgb(59, 124, 64);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* NAVBAR */
+/* NavBar */
 .navbar {
-    background-color: #036b11;
+    background-color: #296831;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     padding: 13px 32px;
     width: 100%;
+    position: fixed;    
+    top: 0;            
+    left: 0;           
+    z-index: 1000;
 }
 
 .nav_links {
@@ -27,41 +35,92 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+
 }
 
 .nav_links a {
     text-decoration: none;
     color: white;
     font-family: Arial, sans-serif;
+    transition: color 0.3s
 }
 
 .nav_links a:hover {
     color: #000000;
+    background-color: #036b11;
+    padding: 6px 14px;
+    border-radius: 20px;
 }
 
-/*  CABECERA  */
+#inicio,
+#ofertas,
+#galeria {
+    border: 3px solid #036b11; 
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/*  Cabecera  */
 .cabezera {
     text-align: center;
     background-color: black;
-    padding: 48px 16px;
+    padding: 0;
+    padding-top: 48px; 
+    border-bottom: 4px solid #036b11; 
+    margin-bottom: 20px;
+}
+
+.banner_img {
+    width: 100%;
+    max-height: 550px;
+    object-fit: cover;
+    display: block;
+}
+
+.cabezera header {
+    padding: 60px 16px;
 }
 
 .cabezera h1 {
-    font-size: clamp(29px, 5vw, 48px);
+    font-size: clamp(42px, 8vw, 80px);
     color: green;
 }
 
 .cabezera p {
-    margin-top: 8px;
-    font-size: 16px;
+    margin-top: 12px;
+    font-size: 20px;
     color: #aaa;
 }
 
-/* SECCIONES GENERALES */
+.bienvenida {
+    padding: 24px 16px 32px;
+    color: white;
+}
+
+.bienvenida h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #90ee90;
+    border-bottom: 2px solid #036b11;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.bienvenida p {
+    font-size: 15px;
+    color: #ccc;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Secciones */
 .seccion {
     width: 90%;
-    max-width: 1000px;
-    margin: 40px auto;
+    max-width: 1200px; 
+    margin: 40px auto; 
+    padding: 50px 0;
+    border-top: 3px solid #036b11; 
 }
 
 .seccion h2 {
@@ -73,12 +132,23 @@ body {
     padding-bottom: 8px;
 }
 
-.seccion p {
-    text-align: center;
-    line-height: 1.7;
+.talla {
+    background-color: #036b11;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/* TARJETAS DE OFERTAS */
+.talla:hover {
+    background-color: white;
+    color: #036b11;
+    border: 1px solid #036b11;
+}
+
+
 .tarjetas {
     display: flex;
     flex-wrap: wrap;
@@ -89,15 +159,25 @@ body {
 .tarjeta {
     background-color: white;
     border-radius: 8px;
-    width: 250px;
+    flex: 1 1 300px; 
+    max-width: 400px; 
     overflow: hidden;
     border: 1px solid #ccc;
 }
 
+.tarjeta:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-color: #036b11; 
+}
+
 .tarjeta img {
     width: 100%;
-    height: 180px;
-    object-fit: cover;
+    height: 300px; 
+    object-fit: contain; 
+    background-color: #f9f9f9; 
+    padding: 10px;
+    transition: transform 0.5s ease; 
 }
 
 .tarjeta_info {
@@ -116,6 +196,13 @@ body {
     margin-bottom: 8px;
 }
 
+.precio_antes {
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through; 
+    margin-bottom: 2px;
+}
+
 .tallas_titulo {
     font-size: 13px;
     color: #555;
@@ -128,35 +215,114 @@ body {
     gap: 6px;
 }
 
-.talla {
+
+/*  Galeria */
+
+.galeria_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+    width: 100%;
+}
+
+.galeria_item {
+    width: 100%; 
+    height: 400px;
+    background-color: white; 
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    overflow: hidden;    
+}
+
+.galeria_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    padding: 15px;
+    transition: transform 0.5s ease;
+    display: block; 
+}
+
+/* para que al momento de pasar el mouse la imagen se vuelva grande */
+.galeria_item:hover img { 
+    transform: scale(1.1); 
+}
+
+.galeria_info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+    padding: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2; 
+    text-align: center; 
+}
+
+.galeria_item:hover .galeria_info {
+    opacity: 1;
+}
+
+.galeria_nombre {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.galeria_precio {
+    font-size: 13px;
+    color: #90ee90;
+    margin-bottom: 8px;
+}
+
+.galeria_info .talla {
+    background-color: white;
+    color: #036b11;
+    font-size: 11px;
+    padding: 2px 8px;
+}
+
+.galeria_info .talla:hover {
     background-color: #036b11;
     color: white;
-    padding: 4px 10px;
-    border-radius: 4px;
-    font-size: 13px;
+    border: 1px solid white;
 }
-
-/*  GALERIA */
-.galeria_grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-}
-
-.imagen {
-    width: 220px;
-    max-width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 6px;
-}
-
-/* FOOTER*/
+/* Footer */
 footer {
     text-align: center;
     background-color: #036b11;
     color: white;
     padding: 16px;
     margin-top: 32px;
+}
+
+.link_github {
+    color: #036b11; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: color 0.3s ease; 
+}
+
+
+.link_github:hover {
+    color: #90ee90; 
+    text-decoration: underline; /
+}
+
+/* para que se adapten las pantallas */
+@media (min-width: 1200px) {
+    .galeria_grid {
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 25px;
+    }
+
+    .galeria_item {
+        max-height: 500px; 
+    }
 }

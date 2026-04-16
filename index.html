@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <!-- NAVBAR -->
+<!-- Navbar -->
     <nav class="navbar">
         <ul class="nav_links">
             <li><a href="#inicio">Inicio</a></li>
@@ -16,28 +16,29 @@
             <li><a href="#galeria">Galería</a></li>
         </ul>
     </nav>
-    <!-- CABECERA -->
-    <div class="cabezera">
+<!-- Seccion de inicio -->
+    <div id="inicio" class="cabezera">
+        <img src="img/banner.jpg" alt="Banner Ropa Urbana" class="banner_img">
         <header>
-            <h1>Ropa Urbana</h1>
+            <h1>BenUrban</h1>
             <p>Moda exclusiva hecha en Chile</p>
         </header>
+        <div class="bienvenida">
+            <h2>Bienvenidos</h2>
+            <p>Somos una tienda chilena dedicada a la venta de ropa urbana exclusiva.
+            Encuentra los mejores estilos al mejor precio.</p>
+        </div>
     </div>
-    <!-- SECCIÓN INICIO -->
-    <section id="inicio" class="seccion">
-        <h2>Bienvenidos</h2>
-        <p>Somos una tienda chilena dedicada a la venta de ropa urbana exclusiva.
-        Encuentra los mejores estilos al mejor precio.</p>
-    </section>
-    <!-- SECCIÓN OFERTAS -->
+<!-- Seccion de ofertas -->
     <section id="ofertas" class="seccion">
         <h2>Ofertas</h2>
         <div class="tarjetas">
             <div class="tarjeta">
-                <img src="img/ropa3.jpg" alt="Poleron urbano">
+                <img src="img/KanyeGap.jpg" alt="Poleron urbano">
                 <div class="tarjeta_info">
                     <h3>Poleron GAP KanYe</h3>
-                    <p class="precio">$330.990</p>
+                        <p class="precio_antes">$600.990</p>
+                        <p class="precio">$490.990</p>
                     <p class="tallas_titulo">Tallas disponibles:</p>
                     <div class="tallas">
                         <span class="talla">S</span>
@@ -46,12 +47,13 @@
                         <span class="talla">XL</span>
                     </div>
                 </div>
-            </div>
+            </div> 
             <div class="tarjeta">
-                <img src="img/ropa4.jpg" alt="Pantalon cargo">
+                <img src="img/Baggy.jpg" alt="Pantalon baggy">
                 <div class="tarjeta_info">
-                    <h3>Pantalón baggy</h3>
-                    <p class="precio">$24.990</p>
+                    <h3>Pantalón Baggy Balenciaga</h3>
+                        <p class="precio_antes">$390.990</p>
+                        <p class="precio">$250.990</p>
                     <p class="tallas_titulo">Tallas disponibles:</p>
                     <div class="tallas">
                         <span class="talla">S</span>
@@ -61,32 +63,128 @@
                 </div>
             </div>
             <div class="tarjeta">
-                <img src="img/ropa2.jpg" alt="Polera streetwear">
+                <img src="img/Kanye.jpg" alt="KanyeGap">
                 <div class="tarjeta_info">
-                    <h3>Chaqueta GAP KanYe</h3>
-                    <p class="precio">$300.990</p>
-                    <p class="tallas_titulo">Tallas disponibles:</p>
+                        <h3>Poleron GAP KanYe</h3>
+                        <p class="precio_antes">$500.190</p>
+                        <p class="precio">$330.990</p>
+                        <p class="tallas_titulo">Tallas disponibles:</p>
                     <div class="tallas">
+                        <span class="talla">S</span>
                         <span class="talla">M</span>
                         <span class="talla">L</span>
+                        <span class="talla">XL</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- SECCIÓN GALERÍA -->
+<!-- Seccion de galeria -->
     <section id="galeria" class="seccion">
         <h2>Galería</h2>
         <div class="galeria_grid">
-            <img src="img/ropa2.jpg" alt="ropa 2" class="imagen">
-            <img src="img/ropa3.jpg" alt="ropa 3" class="imagen">
-            <img src="img/ropa4.jpg" alt="ropa 4" class="imagen">
-            <img src="img/ropa5.jpg" alt="ropa 5" class="imagen">
+            <div class="galeria_item">
+                <img src="img/TrueLegion.jpg" alt="TrueLegion">
+                <div class="galeria_info">
+                    <p class="galeria_nombre">True Legion</p>
+                    <p class="galeria_precio">$45.990</p>
+                    <div class="tallas">
+                        <span class="talla">S</span>
+                        <span class="talla">M</span>
+                        <span class="talla">L</span>
+                    </div>
+                </div>
+            </div>
+            <div class="galeria_item">
+                <img src="img/Supreme.jpg" alt="Supreme">
+                <div class="galeria_info">
+                    <p class="galeria_nombre">Supreme Box Logo</p>
+                    <p class="galeria_precio">$89.990</p>
+                    <div class="tallas">
+                        <span class="talla">M</span>
+                        <span class="talla">L</span>
+                        <span class="talla">XL</span>
+                    </div>
+                </div>
+            </div>
+            <div class="galeria_item">
+                <img src="img/carhartt.jpg" alt="Carhartt">
+                <div class="galeria_info">
+                    <p class="galeria_nombre">Carhartt WIP</p>
+                    <p class="galeria_precio">$120.990</p>
+                    <div class="tallas">
+                        <span class="talla">S</span>
+                        <span class="talla">L</span>
+                    </div>
+                </div>
+            </div>
+            <div class="galeria_item">
+                <img src="img/chaquetaCarhartt.jpg" alt="Chaqueta Carhartt">
+                <div class="galeria_info">
+                    <p class="galeria_nombre">Chaqueta Carhartt</p>
+                    <p class="galeria_precio">$195.990</p>
+                    <div class="tallas">
+                        <span class="talla">M</span>
+                        <span class="talla">XL</span>
+                    </div>
+                </div>
+            </div>
+            <div class="galeria_item">
+                <img src="img/chaquetaNocta.jpg" alt="Chaqueta Nocta">
+                <div class="galeria_info">
+                    <p class="galeria_nombre">Chaqueta Nocta</p>
+                    <p class="galeria_precio">$210.990</p>
+                    <div class="tallas">
+                        <span class="talla">S</span>
+                        <span class="talla">M</span>
+                        <span class="talla">L</span>
+                    </div>
+                </div>
+            </div>
+            <div class="galeria_item">
+                <img src="img/chaquetaAsap.jpg" alt="Chaqueta Asap Rocky">
+                <div class="galeria_info">
+                    <p class="galeria_nombre">Chaqueta Puma x A$AP ROCKY</p>
+                    <p class="galeria_precio">900.990</p>
+                    <div class="tallas">
+                        <span class="talla">S</span>
+                        <span class="talla">M</span>
+                        <span class="talla">XL</span>
+                    </div>
+                </div>
+            </div>
+            <div class="galeria_item">
+                <img src="img/casacaNocta.jpg" alt="Casaca Nocta">
+                <div class="galeria_info">
+                    <p class="galeria_nombre">Casaca Nocta</p>
+                    <p class="galeria_precio">$185.990</p>
+                    <div class="tallas">
+                        <span class="talla">S</span>
+                        <span class="talla">M</span>
+                        <span class="talla">XL</span>
+                    </div>
+                </div>
+            </div>
+            <div class="galeria_item">
+                <img src="img/baggyBalenciaga.jpg" alt="baggy balenciaga">
+                <div class="galeria_info">
+                    <p class="galeria_nombre">Pantalón Baggy Addidas x Balenciaga</p>
+                    <p class="galeria_precio">$700.000</p>
+                    <div class="tallas">
+                        <span class="talla">S</span>
+                        <span class="talla">M</span>
+                        <span class="talla">XL</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <!-- FOOTER -->
+<!-- Footer -->
     <footer>
-        <p>© 2024 Ropa Urbana Chile</p>
+        <a href="https://github.com/BenjaVN/pagina-html" target="_blank" class="link_github">Ver repositorio de GitHub</a>
+        <p>2026 Ropa Urbana Chile</p>
+        <p>RopaUrbana@gmail.com</p>
+        <p>+59 9 3456 8765</p>
     </footer>
 
 </body>
