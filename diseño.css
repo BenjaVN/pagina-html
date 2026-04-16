@@ -16,7 +16,7 @@ body {
 
 /* NavBar */
 .navbar {
-    background-color: #296831;
+    background-color: #1e4723;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,17 +52,25 @@ body {
     border-radius: 20px;
 }
 
-#inicio,
+#inicio {
+    border: 3px solid #036b11;
+    margin-top: 57px;
+    padding: 0;        
+    border-radius: 8px;
+    overflow: hidden;  
+}
+
+
 #ofertas,
 #galeria {
-    border: 3px solid #036b11; 
+    border: 3px solid #036b11;
     margin-top: 20px;
     padding: 20px;
     border-radius: 8px;
 }
 
 /*  Cabecera  */
-.cabezera {
+.cabecera {
     text-align: center;
     background-color: black;
     padding: 0;
@@ -78,16 +86,16 @@ body {
     display: block;
 }
 
-.cabezera header {
+.cabecera header {
     padding: 60px 16px;
 }
 
-.cabezera h1 {
+.cabecera h1 {
     font-size: clamp(42px, 8vw, 80px);
     color: green;
 }
 
-.cabezera p {
+.cabecera p {
     margin-top: 12px;
     font-size: 20px;
     color: #aaa;
@@ -296,7 +304,7 @@ body {
 /* Footer */
 footer {
     text-align: center;
-    background-color: #036b11;
+    background-color: #1e4723;
     color: white;
     padding: 16px;
     margin-top: 32px;
@@ -312,7 +320,7 @@ footer {
 
 .link_github:hover {
     color: #90ee90; 
-    text-decoration: underline; /
+    text-decoration: underline; 
 }
 
 /* para que se adapten las pantallas */
